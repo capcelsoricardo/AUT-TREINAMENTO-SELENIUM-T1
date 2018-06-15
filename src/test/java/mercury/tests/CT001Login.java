@@ -1,11 +1,10 @@
 package mercury.tests;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 import mercury.config.SetUp;
@@ -18,7 +17,7 @@ public class CT001Login {
 
 	@Before
 	public void createBrowser() {
-		driver = SetUp.setUp(driver, "CHROME");
+		driver = SetUp.setUp(driver, "CHROME", "http://newtours.demoaut.com/");
 	}
 
 	@Test

@@ -8,7 +8,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class SetUp {
 	public static WebDriver driver;
 
-	public static WebDriver setUp(WebDriver driver, String browser) {	
+	public static WebDriver setUp(WebDriver driver, String browser, String url) {	
 
 		switch (browser.toUpperCase()) {
 		
@@ -34,7 +34,7 @@ public class SetUp {
 		}
 								
 		driver.manage().window().maximize();
-		driver.get("http://newtours.demoaut.com/");
+		driver.get(url);
 		return driver;
 	}
 

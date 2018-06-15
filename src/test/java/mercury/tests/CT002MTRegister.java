@@ -23,7 +23,7 @@ public class CT002MTRegister {
 
 	@Before
 	public void createBrowser() {
-		driver = SetUp.setUp(driver, "CHROME");
+		driver = SetUp.setUp(driver, "CHROME", "http://newtours.demoaut.com/");
 	}
 
 	@Test	
